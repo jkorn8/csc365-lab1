@@ -13,8 +13,8 @@ def parse_data():
     return file_data
 
 
-def filter_student(data, student_name, print_bus):
-    for student in data:
+def filter_student(student_data, student_name, print_bus):
+    for student in student_data:
         if student['StLastName'] == student_name:
             if print_bus:
                 print(f'Last Name: {student["StLastName"]}\n '
@@ -25,6 +25,36 @@ def filter_student(data, student_name, print_bus):
                       f'First Name: {student["StFirstName"]}\n '
                       f'Grade: {student["Grade"]}\n '
                       f'Classroom: {student["Classroom"]}\n')
+
+
+def filter_teacher(student_data, teacher_name):
+    for student in student_data:
+        if teacher_name == student['TLastName']:
+            print(f'Last Name: {student["StLastName"]}\n '
+                  f'First Name: {student["StFirstName"]}\n ')
+
+
+def filter_grade(student_data, grade):
+    for student in student_data:
+        if grade == student['Grade']:
+            print(f'Last Name: {student["StLastName"]}\n '
+                  f'First Name: {student["StFirstName"]}\n ')
+
+
+def filter_bus(student_data, bus):
+    for student in student_data:
+        if bus == student['Bus']:
+            print(f'Last Name: {student["StLastName"]}\n '
+                  f'First Name: {student["StFirstName"]}\n '
+                  f'Grade: {student["Grade"]}\n '
+                  f'Classroom: {student["Classroom"]}\n')
+
+
+def compute_average(student_data, grade):
+    # Add error checking if no students are found
+    average = 0
+
+    print(f'Average GPA for students with a grade of {grade}: {average}')
 
 
 if __name__ == '__main__':
