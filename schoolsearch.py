@@ -13,8 +13,18 @@ def parse_data():
     return file_data
 
 
-def filter_data():
-    pass
+def filter_student(data, student_name, print_bus):
+    for student in data:
+        if student['StLastName'] == student_name:
+            if print_bus:
+                print(f'Last Name: {student["StLastName"]}\n '
+                      f'First Name: {student["StFirstName"]}\n '
+                      f'Bus Route: {student["Bus"]}\n')
+            else:
+                print(f'Last Name: {student["StLastName"]}\n '
+                      f'First Name: {student["StFirstName"]}\n '
+                      f'Grade: {student["Grade"]}\n '
+                      f'Classroom: {student["Classroom"]}\n')
 
 
 if __name__ == '__main__':
