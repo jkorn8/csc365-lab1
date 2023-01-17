@@ -81,6 +81,15 @@ def compute_average(student_data, grade):
     print(f'Average GPA for students with a grade of {grade}: {average}\n')
 
 
+def compute_info(student_data):
+    # Stores the number of students per grade
+    number_of_students = [0, 0, 0, 0, 0, 0, 0]
+    for student in student_data:
+        number_of_students[int(student['Grade'])] += 1
+    for i, count in enumerate(number_of_students):
+        print(f'{i}: {count}')
+
+
 if __name__ == '__main__':
     students_data = parse_data()    
     while True:
@@ -104,12 +113,14 @@ if __name__ == '__main__':
         elif arr[0][0] == "A":
             compute_average(students_data, arr[1])
         elif arr[0][0] == "I":
-            print("S[tudent]: <lastname> [B[us]]\n"
-                  "T[eacher]: <lastname>\n"
-                  "B[us]: <number>\n"
-                  "G[rade]: <number> [H[igh]|L[ow]]\n"
-                  "A[verage]: <number>\n"
-                  "I[nfo]\n"
-                  "Q[uit]\n")
+            compute_info(students_data)
         if arr[0][0] == 'Q':
             break
+
+# print("S[tudent]: <lastname> [B[us]]\n"
+#                   "T[eacher]: <lastname>\n"
+#                   "B[us]: <number>\n"
+#                   "G[rade]: <number> [H[igh]|L[ow]]\n"
+#                   "A[verage]: <number>\n"
+#                   "I[nfo]\n"
+#                   "Q[uit]\n")
