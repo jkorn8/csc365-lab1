@@ -1,3 +1,5 @@
+import os
+
 PROPERTIES = ['StLastName', 'StFirstName', 'Grade', 'Classroom', 'Bus', 'GPA', 'TLastName', 'TFirstName']
 
 
@@ -91,36 +93,37 @@ def compute_info(student_data):
 
 
 if __name__ == '__main__':
-    students_data = parse_data()    
-    while True:
-        user_input = input("Enter a command: ")
-        arr = user_input.split(' ')
-        # print(arr)
-        if arr[0][0] == "S":
-            if len(arr) == 3:
-                filter_student(students_data, arr[1], True)
-            else:
+    if os.path.exists('./students.txt'):
+        students_data = parse_data()
+        while True:
+            user_input = input("Enter a command: ")
+            arr = user_input.split(' ')
+            if arr[0][0] == 'Q':
+                break
+            if arr[0][0] == "S" and len(arr) == 2:
                 filter_student(students_data, arr[1], False)
-        elif arr[0][0] == "T":
-            filter_teacher(students_data, arr[1])
-        elif arr[0][0] == "B":
-            filter_bus(students_data, arr[1])
-        elif arr[0][0] == "G":
-            if len(arr) == 2:
+            elif arr[0][0] == "S" and len(arr) == 3 and arr[2][0] == 'B':
+                filter_student(students_data, arr[1], True)
+            elif arr[0][0] == "T" and len(arr) == 2:
+                filter_teacher(students_data, arr[1])
+            elif arr[0][0] == "B" and len(arr) == 2:
+                filter_bus(students_data, arr[1])
+            elif arr[0][0] == "G" and len(arr) == 2:
                 filter_grade(students_data, arr[1])
-            if len(arr) == 3:
+            elif arr[0][0] == "G" and len(arr) == 3 and (arr[2][0] == 'H' or arr[2][0] == 'L'):
                 filter_grade_high_low(students_data, arr[1], arr[2][0])
-        elif arr[0][0] == "A":
-            compute_average(students_data, arr[1])
-        elif arr[0][0] == "I":
-            compute_info(students_data)
-        if arr[0][0] == 'Q':
-            break
-
-# print("S[tudent]: <lastname> [B[us]]\n"
-#                   "T[eacher]: <lastname>\n"
-#                   "B[us]: <number>\n"
-#                   "G[rade]: <number> [H[igh]|L[ow]]\n"
-#                   "A[verage]: <number>\n"
-#                   "I[nfo]\n"
-#                   "Q[uit]\n")
+            elif arr[0][0] == "A" and len(arr) == 2:
+                compute_average(students_data, arr[1])
+            elif arr[0][0] == "I" and len(arr) == 1:
+                compute_info(students_data)
+            else:
+                print("Unrecognized search instruction, please enter one of the following commands: \n"
+                      "S[tudent]: <lastname> [B[us]]\n"
+                      "T[eacher]: <lastname>\n"
+                      "B[us]: <number>\n"
+                      "G[rade]: <number> [H[igh]|L[ow]]\n"
+                      "A[verage]: <number>\n"
+                      "I[nfo]\n"
+                      "Q[uit]\n")
+    else:
+        print('File "students.txt" not found... exiting program...')
