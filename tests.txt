@@ -12,44 +12,47 @@ python3 schoolsearch.py
 // TC-2
 // Tests Requirements R3, R4
 // short form command name, existing student
-// expected output: Last Name: OGAS
-First Name: ERVIN
-Grade: 4
-Teacher Last Name: HANTZ
-Teacher First Name: JED
-Classroom: 105
+// expected output:
+// Last Name: OGAS
+// First Name: ERVIN
+// Grade: 4
+// Teacher Last Name: HANTZ
+// Teacher First Name: JED
+// Classroom: 105
 
 S: OGAS
 
 // TC-3
 // Tests Requirements R3, R5
 // short form command name, existing student with Bus Route
-// expected output: Last Name: OGAS
-First Name: ERVIN
-Bus Route: 54
+// expected output:
+// Last Name: OGAS
+// First Name: ERVIN
+// Bus Route: 54
 
 S: OGAS B    
 
 // TC-4
 // Tests Requirements R3, R6
 // short form command name, existing Teacher listing students
-// expected output: Last Name: CORKER
-First Name: CARTER
-
-Last Name: IMMERMAN
-First Name: DEVIN
-
-ast Name: RAPOSE
-First Name: ALONZO
-
-Last Name: OGAS
-First Name: ERVIN
-
-Last Name: MASSART
-First Name: ELDON
-
-Last Name: BEX
-First Name: TAMESHA
+// expected output:
+// Last Name: CORKER
+// First Name: CARTER
+//
+// Last Name: IMMERMAN
+// First Name: DEVIN
+//
+// Last Name: RAPOSE
+// First Name: ALONZO
+//
+// Last Name: OGAS
+// First Name: ERVIN
+//
+// Last Name: MASSART
+// First Name: ELDON
+//
+// Last Name: BEX
+// First Name: TAMESHA
 
 T: HANTZ
 
@@ -57,97 +60,98 @@ T: HANTZ
 // Tests Requirements R3, R7
 // short form command name, prints all occurences of Grade and number
 // expected output: 
-//Last Name: WOOLERY
-//First Name: NOLAN
+// Last Name: WOOLERY
+// First Name: NOLAN
 //
-//Last Name: VILARDO
-//First Name: EMMANUEL
+// Last Name: VILARDO
+// First Name: EMMANUEL
 //
-//Last Name: LIBRANDI
-//First Name: TODD
+// Last Name: LIBRANDI
+// First Name: TODD
 //
-//Last Name: HAVIR
-//First Name: BOBBIE
+// Last Name: HAVIR
+// First Name: BOBBIE
 //
-//Last Name: SARAO
-//First Name: DIEDRA
+// Last Name: SARAO
+// First Name: DIEDRA
 //
-//Last Name: VANCOTT
-//First Name: MIKE
+// Last Name: VANCOTT
+// First Name: MIKE
 //
-//Last Name: WICINSKY
-//First Name: TERESE
+// Last Name: WICINSKY
+// First Name: TERESE
 //
-//Last Name: KOZOLA
-//First Name: BUSTER
+// Last Name: KOZOLA
+// First Name: BUSTER
 //
-//Last Name: MULLINGS
-//First Name: LEIGHANN
+// Last Name: MULLINGS
+// First Name: LEIGHANN
 //
-//Last Name: BUSSMANN
-//First Name: BILLY
+// Last Name: BUSSMANN
+// First Name: BILLY
 //
-//Last Name: BERBES
-//First Name: DICK
+// Last Name: BERBES
+// First Name: DICK
 //
-//Last Name: MULGREW
-//First Name: RANDELL
+// Last Name: MULGREW
+// First Name: RANDELL
 //
-//Last Name: TOWLEY
-//First Name: LANE
+// Last Name: TOWLEY
+// First Name: LANE
 
 G: 2
 
 // TC-6
 // Tests Requirements R2, R3, E1
 // short form command name, no occurences found, so does not crack, but does not output
-// expected output: 
+// expected output:
+// <empty line>
 
-B 1
+B: 1
 
 // TC-7
 // Tests Requirements R3, R8
 // short form command name, valid output and prints all students in bus
 // expected output:
-//Last Name: COOKUS
-//First Name: XUAN
-//Grade: 3
-//Classroom: 107
+// Last Name: COOKUS
+// First Name: XUAN
+// Grade: 3
+// Classroom: 107
 //
-//Last Name: ELHADDAD
-//First Name: SHANTE
-//Grade: 3
-//Classroom: 107
+// Last Name: ELHADDAD
+// First Name: SHANTE
+// Grade: 3
+// Classroom: 107
 //
-//Last Name: IMMERMAN
-//First Name: DEVIN
-//Grade: 4
-//Classroom: 105
+// Last Name: IMMERMAN
+// First Name: DEVIN
+// Grade: 4
+// Classroom: 105
 //
-//Last Name: OBREIN
-//First Name: STAN
-//Grade: 6
-//Classroom: 111
+// Last Name: OBREIN
+// First Name: STAN
+// Grade: 6
+// Classroom: 111
 //
-//Last Name: CORONADO
-//First Name: DIMPLE
-//Grade: 6
-//Classroom: 102
+// Last Name: CORONADO
+// First Name: DIMPLE
+// Grade: 6
+// Classroom: 102
 //
-//Last Name: SARAO
-//First Name: DIEDRA
-//Grade: 2
-//Classroom: 108
+// Last Name: SARAO
+// First Name: DIEDRA
+// Grade: 2
+// Classroom: 108
 //
-//Last Name: EARLY
-//First Name: TORY
-//Grade: 3
-//Classroom: 107
+// Last Name: EARLY
+// First Name: TORY
+// Grade: 3
+// Classroom: 107
 //
-//Last Name: KEMERER
-//First Name: ROSETTA
-//Grade: 6
-//Classroom: 102
+// Last Name: KEMERER
+// First Name: ROSETTA
+// Grade: 6
+// Classroom: 102
 
 B: 52
 
@@ -155,11 +159,11 @@ B: 52
 // Tests Requirement R3,R9
 // Short form command, print Highest GPA
 // expected output:
-//Last Name: WICINSKY
-//First Name: TERESE
-//GPA: 3.22
-//Teacher: HAMER
-//Bus Route: 53
+// Last Name: WICINSKY
+// First Name: TERESE
+// GPA: 3.22
+// Teacher: HAMER
+// Bus Route: 53
 
 G: 2 H
 
@@ -167,11 +171,11 @@ G: 2 H
 // Tests Requirement R3,R9
 // Short form command, print Lowest GPA
 // expected output:
-//Last Name: KOZOLA
-//First Name: BUSTER
-///GPA: 2.76
-//Teacher: HAMER
-//Bus Route: 55
+// Last Name: KOZOLA
+// First Name: BUSTER
+// GPA: 2.76
+// Teacher: HAMER
+// Bus Route: 55
 
 G: 2 L
 

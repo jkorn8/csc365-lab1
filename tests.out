@@ -112,6 +112,23 @@ First Name: ROSETTA
 Grade: 6
 Classroom: 102
 
+Enter a command: G: 2 H
+Last Name: WICINSKY
+First Name: TERESE
+GPA: 3.22
+Teacher: HAMER
+Bus Route: 53
+
+Enter a command: G: 2 L
+Last Name: KOZOLA
+First Name: BUSTER
+GPA: 2.76
+Teacher: HAMER
+Bus Route: 55
+
+Enter a command: A 2
+Average GPA for students with a grade of 2: 2.946153846153846
+
 Enter a command: I
 0: 0
 1: 2
