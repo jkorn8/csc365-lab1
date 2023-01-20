@@ -3,7 +3,7 @@
 
 
 // TC-1
-// Tests Requirements R1, R2
+// Tests Requirements R1, R2, R13
 // Run in Terminal to get into the Program, and verify it works
 // expected output: Enter a command:
 
@@ -13,11 +13,11 @@ python3 schoolsearch.py
 // Tests Requirements R3, R4
 // short form command name, existing student
 // expected output: Last Name: OGAS
-// First Name: ERVIN
-// Grade: 4
-// Teacher Last Name: HANTZ
-// Teacher First Name: JED
-// Classroom: 105
+First Name: ERVIN
+Grade: 4
+Teacher Last Name: HANTZ
+Teacher First Name: JED
+Classroom: 105
 
 S: OGAS
 
@@ -25,8 +25,8 @@ S: OGAS
 // Tests Requirements R3, R5
 // short form command name, existing student with Bus Route
 // expected output: Last Name: OGAS
-// First Name: ERVIN
-// Bus Route: 54
+First Name: ERVIN
+Bus Route: 54
 
 S: OGAS B    
 
@@ -34,12 +34,12 @@ S: OGAS B
 // Tests Requirements R3, R6
 // short form command name, existing Teacher listing students
 // expected output: Last Name: CORKER
-// First Name: CARTER
+First Name: CARTER
 
 Last Name: IMMERMAN
 First Name: DEVIN
 
-Last Name: RAPOSE
+ast Name: RAPOSE
 First Name: ALONZO
 
 Last Name: OGAS
@@ -101,7 +101,7 @@ G: 2
 // TC-6
 // Tests Requirements R2, R3, E1
 // short form command name, no occurences found, so does not crack, but does not output
-// expected output: <empty line>
+// expected output: 
 
 B 1
 
@@ -152,6 +152,38 @@ B 1
 B: 52
 
 // TC-8
+// Tests Requirement R3,R9
+// Short form command, print Highest GPA
+// expected output:
+//Last Name: WICINSKY
+//First Name: TERESE
+//GPA: 3.22
+//Teacher: HAMER
+//Bus Route: 53
+
+G: 2 H
+
+// TC-9
+// Tests Requirement R3,R9
+// Short form command, print Lowest GPA
+// expected output:
+//Last Name: KOZOLA
+//First Name: BUSTER
+///GPA: 2.76
+//Teacher: HAMER
+//Bus Route: 55
+
+G: 2 L
+
+// TC-10
+// Tests Requirement R3,R10
+// Short form command, print Average GPA given grade level 
+// expected output:
+// Average GPA for students with a grade of 2: 2.946153846153846
+
+A 2
+
+// TC-11
 // Tests Requirement R11
 // short form command name info
 // expected output:
@@ -165,7 +197,7 @@ B: 52
 
 I
 
-// TC-10
+// TC-12
 // Tests Requirments R3, R13
 // quit command
 // expected output: program terminates
