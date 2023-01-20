@@ -79,7 +79,7 @@ def compute_average(student_data, grade):
         if student['Grade'] == grade:
             num += 1
             total += float(student['GPA'])
-    average = total / num
+    average = total / num if num != 0 else 0
     print(f'Average GPA for students with a grade of {grade}: {average}\n')
 
 
