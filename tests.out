@@ -1,0 +1,123 @@
+Enter a command: S: OGAS
+Last Name: OGAS
+First Name: ERVIN
+Grade: 4
+Teacher Last Name: HANTZ
+Teacher First Name: JED
+Classroom: 105
+
+Enter a command: S: OGAS B
+Last Name: OGAS
+First Name: ERVIN
+Bus Route: 54
+
+Enter a command: T: HANTZ
+Last Name: CORKER
+First Name: CARTER
+
+Last Name: IMMERMAN
+First Name: DEVIN
+
+Last Name: RAPOSE
+First Name: ALONZO
+
+Last Name: OGAS
+First Name: ERVIN
+
+Last Name: MASSART
+First Name: ELDON
+
+Last Name: BEX
+First Name: TAMESHA
+
+Enter a command: G: 2
+Last Name: WOOLERY
+First Name: NOLAN
+
+Last Name: VILARDO
+First Name: EMMANUEL
+
+Last Name: LIBRANDI
+First Name: TODD
+
+Last Name: HAVIR
+First Name: BOBBIE
+
+Last Name: SARAO
+First Name: DIEDRA
+
+Last Name: VANCOTT
+First Name: MIKE
+
+Last Name: WICINSKY
+First Name: TERESE
+
+Last Name: KOZOLA
+First Name: BUSTER
+
+Last Name: MULLINGS
+First Name: LEIGHANN
+
+Last Name: BUSSMANN
+First Name: BILLY
+
+Last Name: BERBES
+First Name: DICK
+
+Last Name: MULGREW
+First Name: RANDELL
+
+Last Name: TOWLEY
+First Name: LANE
+
+Enter a command: B: 1
+Enter a command: B: 52
+Last Name: COOKUS
+First Name: XUAN
+Grade: 3
+Classroom: 107
+
+Last Name: ELHADDAD
+First Name: SHANTE
+Grade: 3
+Classroom: 107
+
+Last Name: IMMERMAN
+First Name: DEVIN
+Grade: 4
+Classroom: 105
+
+Last Name: OBREIN
+First Name: STAN
+Grade: 6
+Classroom: 111
+
+Last Name: CORONADO
+First Name: DIMPLE
+Grade: 6
+Classroom: 102
+
+Last Name: SARAO
+First Name: DIEDRA
+Grade: 2
+Classroom: 108
+
+Last Name: EARLY
+First Name: TORY
+Grade: 3
+Classroom: 107
+
+Last Name: KEMERER
+First Name: ROSETTA
+Grade: 6
+Classroom: 102
+
+Enter a command: I
+0: 0
+1: 2
+2: 13
+3: 9
+4: 15
+5: 0
+6: 21
+Enter a command: Q

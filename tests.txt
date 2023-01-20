@@ -13,11 +13,11 @@ python3 schoolsearch.py
 // Tests Requirements R3, R4
 // short form command name, existing student
 // expected output: Last Name: OGAS
-First Name: ERVIN
-Grade: 4
-Teacher Last Name: HANTZ
-Teacher First Name: JED
-Classroom: 105
+// First Name: ERVIN
+// Grade: 4
+// Teacher Last Name: HANTZ
+// Teacher First Name: JED
+// Classroom: 105
 
 S: OGAS
 
@@ -25,8 +25,8 @@ S: OGAS
 // Tests Requirements R3, R5
 // short form command name, existing student with Bus Route
 // expected output: Last Name: OGAS
-First Name: ERVIN
-Bus Route: 54
+// First Name: ERVIN
+// Bus Route: 54
 
 S: OGAS B    
 
@@ -34,12 +34,12 @@ S: OGAS B
 // Tests Requirements R3, R6
 // short form command name, existing Teacher listing students
 // expected output: Last Name: CORKER
-First Name: CARTER
+// First Name: CARTER
 
 Last Name: IMMERMAN
 First Name: DEVIN
 
-ast Name: RAPOSE
+Last Name: RAPOSE
 First Name: ALONZO
 
 Last Name: OGAS
@@ -101,7 +101,7 @@ G: 2
 // TC-6
 // Tests Requirements R2, R3, E1
 // short form command name, no occurences found, so does not crack, but does not output
-// expected output: 
+// expected output: <empty line>
 
 B 1
 
