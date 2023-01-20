@@ -1,0 +1,13 @@
+
+I
+// TC-8
+// Tests Requirement R11
+// short form command name info
+// expected output:
+// 0: 0
+// 1: 2
+// 2: 13
+// 3: 9
+// 4: 15
+// 5: 0
+// 6: 21
